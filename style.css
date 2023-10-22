@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 96%);
+}
+.container .displaytime{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding: 4rem 0;
+    border: 3px solid rgb(87, 37, 236);
+    border-radius: 50%;
+    font-size: 2rem;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 21%, rgba(107,45,253,1) 88%);
+    box-shadow: 0px 8px 10px 9px black;
+}
+
+
+.container .boy{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.container div button{
+    width: 20%;
+    height: 3em;
+    margin-inline: 10px;
+    background-color: #f92672;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem 4rem;
+    margin: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+}
+.circle{
+    background-color: rgb(9, 186, 153);
+    box-shadow:0px 3px 20px 2px black;
+    width: 20px;
+    height: 20px;
+    position: relative ;
+    left:  0;
+    right: 0px;
+    top: 135px;
+    bottom: 0px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-animation: circle 3s linear infinite;
+    animation: circle 3s linear infinite;
+
+}
+@keyframes circle{
+    0% {
+        transform: rotate(0deg)translate(-98px)rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) translate(-98px) rotate(-360deg);
+    }
+}
